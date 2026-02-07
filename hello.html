@@ -3,19 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pertemuan 1</title>
+    <title>Portofolio - Damta Noviyan Muhamad Faiz</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
             margin: 0;
-            font-family: Arial, sans-serif; 
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        .hero {
+            text-align: center;
+            background: #f4f4f4;
+        }
+        .hero img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form div {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #2c3e50;
+            color: white;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-    Hello World, Saya Damta Noviyan Muhamad Faiz, peserta Tech Class Web Dev 2026!
+
+    <header>
+        <h1>Damta Noviyan Muhamad Faiz</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="Assets/img/anjay.jpeg" alt="Foto Profil Damta Noviyan">
+            <h2>Full Stack Developer & Student</h2>
+            <p>Membangun solusi digital yang efisien dan inovatif melalui Sistem Informasi.</p>
+        </section>
+
+        <hr>
+
+        <section id="about">
+            <h3>Tentang Saya</h3>
+            <p>
+                Halo! Saya Damta, seorang mahasiswa Sistem Informasi yang memiliki minat mendalam di dunia web development. 
+                Motivasi saya bergabung di Tech Class Web Dev 2026 adalah untuk memperdalam kemampuan full-stack saya 
+                dan belajar praktik terbaik dalam membangun aplikasi web yang skalabel dan user-friendly.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h3>Keahlian</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Skill</th>
+                        <th>Tingkat Kemahiran</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>HTML & CSS</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>JavaScript</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Backend Development</td>
+                        <td>Advanced</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h3>Hubungi Saya</h3>
+            <form action="#">
+                <div>
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Damta Noviyan Muhamad Faiz - Tech Class Web Dev</p>
+    </footer>
+
 </body>
 </html>
